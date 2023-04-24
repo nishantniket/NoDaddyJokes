@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" *ngIf="isLoaded">
+            <h3>Random Jokes</h3>
+            <div>PunchLine: {{randomJoke.punchline}}</div>
+            <div>setup: {{randomJoke.setup}}</div>
+
+            <div>shareableLink: {{randomJoke.shareableLink}}</div>
+            <div>type: {{randomJoke.type}}</div>
+
+            <button type="button" (click)="GetRandomJokes()">Get New Jokes</button>
+        </div>
+        <div class="col-md-6">
+            <h3>Jokes Count:</h3><span>{{jokesCount}}</span>
+        </div>
+    </div>
+    
+</div>
